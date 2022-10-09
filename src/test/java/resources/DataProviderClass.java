@@ -16,14 +16,14 @@ public class DataProviderClass {
 
     @DataProvider(name = "login")
     public static Object[][] dataForLogin(Method m) {
-        if (m.getName().equalsIgnoreCase("loginTest")) {
+        if (m.getName().equalsIgnoreCase("verifyUserIsAbleToSuccessfullyLoginWithCorrectData")) {
             return new Object[][]{
                     {"maaloks91@gmail.com", "password"}
             };
         } else {
             return new Object[][]{
                     {"test@test.ua", "qwerty"},
-                    {"admin", "admin"}
+                    {"admin@com.ua", "admin"}
 
             };
         }
